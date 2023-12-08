@@ -1,0 +1,29 @@
+.body{
+    background-color: grey;
+    color: white;    
+}
+.card_own{
+    background-color:black;
+    color: white;
+    margin-left: 0%;
+}
+.card_own:hover{
+    box-shadow: 20px 10px 15px 10px rgba(24, 23, 23, 0.479);
+    cursor: pointer;
+    background-color: blue;
+    scale: 1.01;
+    transition: all 0.4s;
+}
+.title-section {
+    margin-block-start: 50px;
+    margin-left: 80px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.Title{
+    position: relative;
+    padding-top:5%;
+    font-family: cursive;
+    color: dodgerblue;
+  }

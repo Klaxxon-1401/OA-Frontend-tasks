@@ -1,0 +1,164 @@
+nav {
+    background-color: green;
+    color: white;
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+
+  .navbar > .routes > * {
+    margin-inline: 10px;
+  }
+
+  .logo {
+    max-width: 80px;
+    padding-block: 15px;
+  }
+  .Title{
+    position: relative;
+    padding-top:5%;
+    font-family: cursive;
+    color: dodgerblue;
+  }
+  .contact-btn {
+    background-color: white;
+    padding-inline: 20px;
+    padding-block: 10px;
+    color: #22018e;
+    cursor: pointer;
+    transition: all 0.5s;
+    border: 1px solid transparent;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+  }
+  
+
+  body {
+    margin: 0%;
+  }
+
+  .max-width {
+    margin-inline: auto;
+    max-width: 1200px;
+    width: 95%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title-section {
+    margin-block-start: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .view-btn {
+    background-color: red;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .view-btn:hover {
+    color: white;
+    background-color: #22018e;
+  }
+
+  .contact-btn:hover {
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .view-btn::selection,
+  .contact-btn::selection {
+    background-color: transparent;
+  }
+
+  .view-btn:active,
+  .contact-btn:active {
+    scale: 1.1;
+  }
+
+  .card-section {
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+    flex-basis: 280px;
+    padding: 10px;
+    max-width: 280px;
+    border: 20000px;
+    border-color: black;
+  }
+
+  .card-section:hover{
+    box-shadow: 20px 10px 15px 10px rgba(24, 23, 23, 0.479);
+    cursor: pointer;
+    background-color: grey;
+    scale: 1.01;
+    transition: all 0.5s;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+
+  .card-section-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  @media (max-width: 1220px) {
+    .card-section {
+      flex-basis: calc(50% - 10px);
+      max-width: 350px;
+    }
+  }
+  @media (max-width: 700px) {
+    .navbar > .routes,
+    .navbar > .contact-btn {
+      display: none;
+    }
+
+    .navbar > .menu-btn {
+      display: block;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .card-section {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+  .Footer{
+    background-color: darkmagenta;
+    gap:40%
+  }

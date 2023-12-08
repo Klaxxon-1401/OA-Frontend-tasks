@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        }
+        #counter{
+            background-color: yellow;
+            width: fit-content;
+            height: fit-content;
+            padding: 50%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;          
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+
+ 
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 1em;
+            margin: 0 5px;
+            padding: 8px 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            border: black;
+            border-radius: 4px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="counter"></div>
+        <div class="Box-container">
+        <button id="inc" class="button">+</button>
+        <button id="dec" class="button">-</button>
+    </div>
+    <script>
+        let val=0;
+        let incr=document.querySelector("#inc");
+        let decr=document.querySelector("#dec");
+        let counter=document.querySelector("#counter");
+        
+        incr.addEventListener("click",()=>{
+            val=val+1;
+            counter.innerHTML=val;
+        
+        })
+        
+        decr.addEventListener("click",()=>{
+            val=val-1;
+            counter.innerHTML=val;
+        })</script>
+    </div>
+</body>
+</html>

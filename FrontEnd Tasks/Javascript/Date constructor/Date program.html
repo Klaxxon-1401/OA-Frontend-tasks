@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <title>Document</title>
+<style>
+    h1{
+    text-align: center;
+    color: Purple;   
+}
+</style>
+</head>
+<body>
+    <script>
+        var a= new Date()
+        var time= a.getHours()
+        if (time>=0 && time<=12) {
+            document.write("<h1>Good Morning</h1>")
+
+        } 
+        else if(time>12 && time<=15) {
+            document.write("<h1>Good After-noon</h1>")
+        }
+        else if(time>15 && time<=20){
+            document.write("<h1>Good Evening</h1>")
+        }
+        else{
+            document.write("<h1>Good Night</h1>")
+        }
+    </script>
+    
+</body>
+</html>

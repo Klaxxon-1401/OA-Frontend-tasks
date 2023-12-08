@@ -1,0 +1,184 @@
+:root{
+    --hcolor:black;
+    --vcolor: white;
+}
+
+body{
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.obj1{
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    position: absolute;
+    rotate: 45deg;
+    color:black;
+    background-color: green;   
+    animation-name:drop1;
+    animation-duration: 1s;
+    animation-play-state:running;
+    animation-timing-function:linear;
+    animation-direction: unset;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+.obj2{
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    position: absolute;
+    rotate: 45deg;
+    color:black;
+    background-color: green;   
+    animation-name:drop2;
+    animation-duration: 1s;
+    animation-play-state:running;
+    animation-timing-function:linear;
+    animation-direction: unset;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+.obj3{
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    position: absolute;
+    rotate: 45deg;
+    color:black;
+    background-color: green;   
+    animation-name:drop3;
+    animation-duration: 1s;
+    animation-play-state:running;
+    animation-timing-function:linear;
+    animation-direction: unset;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+.obj4{
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    position: absolute;
+    rotate: 45deg;
+    color:black;
+    background-color: green;   
+    animation-name:drop4;
+    animation-duration: 1s;
+    animation-play-state:running;
+    animation-timing-function:linear;
+    animation-direction: unset;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+.obj5{
+    height: 100px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    content: '';
+    position: absolute;
+    rotate: 45deg;
+    color:black;
+    background-color: green;   
+    animation-name:drop5;
+    animation-duration: 1s;
+    animation-play-state:running;
+    animation-timing-function:linear;
+    animation-direction: unset;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+
+}
+
+
+@keyframes drop1 {
+    from {
+      top: 0%;
+      left: 0%;
+      background-color: var(--vcolor);
+    }
+    to {
+      top:100%;
+      left: 20%;
+      background-color: var(--hcolor);
+      display: none;
+
+}
+}
+@keyframes drop2{
+    from{
+        top:100%;
+        left: 20%;
+        background-color: var(--hcolor);
+    }
+    to{
+        top: 0%;
+        left: 40%;
+        background-color: var(--vcolor);
+        display: none;
+    }
+
+}
+@keyframes drop3 {
+    from{ 
+        top: 0%;
+        left: 40%;
+        background-color: var(--vcolor);
+    }
+    to{
+        top: 100%;
+        left: 60%;
+        background-color: var(--hcolor);
+        display: none;
+    }
+    
+}
+@keyframes drop4{
+    from{
+        top: 100%;
+        left: 60%;
+        background-color: var(--hcolor);
+    }
+    to{
+        top: 0%;
+        left: 80%;
+        background-color: var(--vcolor);
+        display: none;
+    }
+}
+@keyframes  drop5{
+    from{
+        top: 0%;
+        left: 80%;
+        background-color: var(--vcolor);
+        
+    }
+    to{
+        top: 100%;
+        left: 100%;
+        background-color: var(--hcolor);
+        display: none;
+
+    }
+}
