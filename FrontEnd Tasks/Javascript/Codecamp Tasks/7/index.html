@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: red; /* Set background color */
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            width: 60%;
+            background-color:black;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .faq-title {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .card-section {
+            display: flex;
+            background-color: red;
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .answer{
+            display: none;
+        }
+    </style>
+    <title>FAQ Page</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="faq-title">Frequently Asked Questions</h1>
+        <div class="card-section" id="q1">Q1: What is Lorem Ipsum?</div>
+        <div class="card-section answer" id="a1">A1: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</div>
+
+        <div class="card-section" id="q2">Q2: How can I access my account?</div>
+        <div class="card-section answer" id="a2">A2: To access your account, simply click on the "Login" button on the top-right corner of the page and enter your username and password.</div>
+
+        <div class="card-section" id="q3">Q3: Can I change my password?</div>
+        <div class="card-section answer" id="a3">A3: Yes, you can change your password by navigating to the "Account Settings" page and selecting the "Change Password" option.</div>
+
+        <div class="card-section" id="q4">Q4: Is there a mobile app available?</div>
+        <div class="card-section answer" id="a4">A4: Currently, we do not have a dedicated mobile app, but our website is designed to be responsive and can be accessed on various devices, including smartphones and tablets.</div>
+
+        <div class="card-section" id="q5">Q5: How do I contact customer support?</div>
+        <div class="card-section answer" id="a5">A5: If you need assistance, you can contact our customer support team by sending an email to support@example.com or by using the live chat feature on our website.</div>
+    </div>
+    <script>
+        const doc=document;
+        let Q1=doc.querySelector("#q1")
+        let Q2=doc.querySelector("#q2")
+        let Q3=doc.querySelector("#q3")
+        let Q4=doc.querySelector("#q4")
+        let Q5=doc.querySelector("#q5")
+
+        Q1.addEventListener("click", ()=>{
+            let A1=doc.querySelector("#a1")
+            A1.classList.toggle("answer")
+        })
+        Q2.addEventListener("click", ()=>{
+            let A2=doc.querySelector("#a2")
+            A2.classList.toggle("answer")
+        })
+        Q3.addEventListener("click", ()=>{
+            let A3=doc.querySelector("#a3")
+            A3.classList.toggle("answer")
+        })
+        Q4.addEventListener("click", ()=>{
+            let A4=doc.querySelector("#a4")
+            A4.classList.toggle("answer")
+        })
+        Q5.addEventListener("click", ()=>{
+            let A5=doc.querySelector("#a5")
+            A5.classList.toggle("answer")
+        })
+    </script>
+</body>
+</html>
