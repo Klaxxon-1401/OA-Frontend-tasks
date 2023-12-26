@@ -7,4 +7,5 @@ function Button() {
     let green=Math.floor(Math.random()*256)
     let RGBColor = "rgb(" + red + "," + blue + "," + green + ")";  
     body.style.backgroundColor=RGBColor;
+    
 } 
